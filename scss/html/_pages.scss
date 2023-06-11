@@ -1,0 +1,149 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+
+body {
+    @extend %fuente;
+  }
+
+main {
+    @extend %border;
+    @extend %main-dos;
+  }
+  
+header {
+    background-color: $color-uno;
+    color: $color-dos;
+    @include faltante(8px, "", "", "");
+  }
+  
+.header-container {
+    @extend %border;
+  }
+  
+.logo {
+    @include flex;
+  }
+  
+
+  
+.logo-titulo {
+    @include logo;
+  }
+
+.productos-destacados{
+    @include grid; 
+  }
+  
+.product-container {
+    @include grid;
+  }
+  
+.product {
+    @include product;
+  }
+  
+.product img {
+    @include faltante("", 100%, "", "");
+  }
+  
+.product h2 {
+    @include font(24px, 10px);
+    @include faltante("", "", 10px, "");
+  }
+  
+.Descripcion {
+    @include font(14px, 10px);
+    color: $color-tres;
+  }
+  
+.Precio {
+  @include font(25px, 10px);
+  }
+  
+button {
+   @extend %button;
+  }
+  
+
+.imgc {
+    @extend %fuente;
+    @extend %fondo-dos;
+  }
+  
+  .mainc {
+    @include flex;
+    @include faltante("", "", "", 100vh);
+  }
+  
+  .Contacto {
+    @include contacto;
+  }
+  
+  form {
+    @extend %form;
+  }
+  
+  label {
+    @include font(20px, 10px);
+  }
+  
+  input,
+  textarea {
+    @extend %textarea;
+  }
+  
+  .hero {
+    @include medidas(1500px, 400px, 0);
+    @include flex;
+    @include fondo;
+  }
+  
+  .hero-container {
+    @include grid;
+    color: $color-tres;
+  }
+  
+  .hero h1 {
+    @include flex;
+    @include font(60px, 20px);
+  }
+  
+  .hero p {
+    @include flex;
+    @include font(24px, 40px);
+  }
+  
+  .mainc {
+    @include flex;
+    @include faltante("", "", "", 100vh);
+  }
+
+  footer {
+    background-color: $color-uno;
+    color: $color-dos;
+    @include flex;
+  }
+
+  @media screen and (min-width:850px) {
+    .product-container{
+      @include tablet;
+    }
+  
+    .productos-destacados{
+      @include tablet;
+    }
+  
+  }
+  
+  
+  @media screen and (min-width:1024px) {
+    .product-container{
+      @include desktop;
+    }
+    .productos-destacados{
+      @include destacados;
+    }
+  
+  }

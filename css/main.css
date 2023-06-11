@@ -1,0 +1,179 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main, .header-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1200px; }
+
+body, .imgc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f8f8f8; }
+
+button {
+  background-color: #333;
+  color: #f8f8f8;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px 5px 5px; }
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px; }
+
+.hero {
+  background-image: url("../img/meric-tuna-CE1OvMrZumQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.imgc {
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center; }
+
+/* Contacto */
+main {
+  max-width: 1200px;
+  flex-wrap: wrap; }
+
+header {
+  background-color: #333;
+  color: #f8f8f8;
+  padding: 8px; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.logo-titulo {
+  margin-left: 20px;
+  height: auto; }
+
+.productos-destacados {
+  display: grid;
+  padding: 5rem; }
+
+.product-container {
+  display: grid;
+  padding: 5rem; }
+
+.product {
+  width: 350px;
+  background-color: #f8f8f8;
+  margin-bottom: 40px;
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+  text-align: center; }
+
+.product img {
+  max-width: 100%; }
+
+.product h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.Descripcion {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: black; }
+
+.Precio {
+  font-size: 25px;
+  margin-bottom: 10px; }
+
+.mainc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.Contacto {
+  background-color: #f8f8f8;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #333;
+  max-width: 600px; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+
+label {
+  font-size: 20px;
+  margin-bottom: 10px; }
+
+.hero {
+  width: 1500px;
+  height: 400px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hero-container {
+  display: grid;
+  padding: 5rem;
+  color: black; }
+
+.hero h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  margin-bottom: 20px; }
+
+.hero p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 40px; }
+
+.mainc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+footer {
+  background-color: #333;
+  color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@media screen and (min-width: 850px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+    column-gap: 20px; }
+  .productos-destacados {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+    column-gap: 20px; } }
+
+@media screen and (min-width: 1024px) {
+  .product-container {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5px;
+    column-gap: 20px; }
+  .productos-destacados {
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 1px;
+    padding: 2rem; } }

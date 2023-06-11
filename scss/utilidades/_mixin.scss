@@ -1,0 +1,81 @@
+//mixin con parametros
+
+@mixin medidas($width, $height, $padding ){
+    width: $width;
+    height: $height;
+    padding: $padding;
+
+}
+
+@mixin font($font, $margin){
+    font-size: $font;
+    margin-bottom: $margin;
+}
+
+@mixin faltante($padding, $max, $margin, $he){
+    padding: $padding;
+    max-width: $max;
+    margin-top: $margin;
+    height: $he;
+
+}
+
+
+//mixin sin parametros
+
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid{
+    display: grid;
+    padding: 5rem;
+}
+
+@mixin product{
+    width: 350px;
+    background-color: $color-dos;
+    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 0 0 10px $color-tres;
+    text-align: center;
+}
+
+@mixin tablet{
+    grid-template-columns: repeat(2, 1fr);
+      row-gap: 5px;
+      column-gap: 20px;
+}
+
+@mixin contacto{
+    background-color: $color-dos;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $color-uno;
+    max-width: 600px;
+}
+
+@mixin desktop{
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5px;
+    column-gap: 20px;
+}
+
+@mixin destacados{
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 1px;
+    padding: 2rem;
+}
+
+@mixin logo{
+    margin-left: 20px;
+    height: auto;
+}
+
+@mixin fondo{
+    background-image: url("../img/meric-tuna-CE1OvMrZumQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
