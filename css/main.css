@@ -35,25 +35,26 @@ textarea {
   border-radius: 5px;
   margin-bottom: 20px; }
 
-.hero {
-  background-image: url("../img/meric-tuna-CE1OvMrZumQ-unsplash.jpg");
-  background-size: cover;
-  background-position: center; }
-
 .imgc {
   background-image: url(../img/fondo.jpg);
   background-size: cover;
   background-position: center; }
 
-/* Contacto */
 main {
   max-width: 1200px;
   flex-wrap: wrap; }
 
+form {
+  display: flex;
+  flex-direction: column; }
+
 header {
   background-color: #333;
   color: #f8f8f8;
-  padding: 8px; }
+  padding: 8px;
+  max-width: "";
+  margin-top: "";
+  height: ""; }
 
 .logo {
   display: flex;
@@ -77,16 +78,22 @@ header {
   background-color: #f8f8f8;
   margin-bottom: 40px;
   padding: 20px;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 5px black;
   text-align: center; }
 
 .product img {
-  max-width: 100%; }
+  padding: "";
+  max-width: 100%;
+  margin-top: "";
+  height: ""; }
 
 .product h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  margin-top: 10px; }
+  padding: "";
+  max-width: "";
+  margin-top: 10px;
+  height: ""; }
 
 .Descripcion {
   font-size: 14px;
@@ -101,18 +108,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: "";
+  max-width: "";
+  margin-top: "";
   height: 100vh; }
 
 .Contacto {
   background-color: #f8f8f8;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #333;
+  box-shadow: 0px 0px 10px #333;
   max-width: 600px; }
-
-form {
-  display: flex;
-  flex-direction: column; }
 
 label {
   font-size: 20px;
@@ -124,7 +130,10 @@ label {
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-image: url("../img/meric-tuna-CE1OvMrZumQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center; }
 
 .hero-container {
   display: grid;
@@ -149,6 +158,9 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: "";
+  max-width: "";
+  margin-top: "";
   height: 100vh; }
 
 footer {
